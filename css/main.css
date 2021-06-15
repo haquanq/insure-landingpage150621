@@ -718,20 +718,6 @@ footer > img.mobile {
   margin: 0;
 }
 
-.foot__navi__section div > a::after {
-  position: absolute;
-  content: "";
-  opacity: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  background: #2d2640;
-  -webkit-transition: 200ms ease;
-  transition: 200ms ease;
-}
-
 @media screen and (max-width: 800px) {
   footer {
     position: relative;
@@ -866,6 +852,19 @@ footer > img.mobile {
   .body__cta > button:hover {
     background: white;
     color: #2d2640;
+  }
+  .foot__navi__section > div > a::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #2d2640;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
   }
   .foot__navi__section > div > a:hover::after {
     opacity: 1;
