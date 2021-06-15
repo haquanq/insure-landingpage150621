@@ -115,6 +115,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .head__nav__container .nav_ham > span {
@@ -702,9 +703,9 @@ footer > img.mobile {
 .foot__navi__section div a {
   color: #2d2640;
   font-size: 0.9375em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
