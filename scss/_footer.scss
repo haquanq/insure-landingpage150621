@@ -57,6 +57,7 @@ footer {
                 flex-direction: column;
                 display: flex;
                 a {
+                    word-wrap: none;
                     color: $Dark_Violet;
                     font-size: 0.9375em;
                     width: max-content;

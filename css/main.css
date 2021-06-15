@@ -701,6 +701,7 @@ footer > img.mobile {
 }
 
 .foot__navi__section div a {
+  word-wrap: none;
   color: #2d2640;
   font-size: 0.9375em;
   width: -webkit-max-content;
