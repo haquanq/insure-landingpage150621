@@ -1,0 +1,20 @@
+$Dark_Violet: hsl(256, 26%, 20%);
+$Grayish_Blue: hsl(216, 30%, 68%);
+
+$Very_Dark_Violet: hsl(270, 9%, 17%);
+$Dark_Grayish_Violet: hsl(273, 4%, 51%);
+$Very_Light_Gray: hsl(0, 0%, 98%);
+
+@mixin Width {
+    max-width: 1110px; min-width: 325px;
+    width: 88%;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$headingFont: "DM serif display", sans-serif; // 400
+$bodyFont: "Karla", sans-serif; // 400, 700

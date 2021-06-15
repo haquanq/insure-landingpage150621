@@ -1,0 +1,174 @@
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.body {
+    padding: 305px 0 150px 0;
+    @include Width;
+    > span {
+        display: block;
+        background: $Very_Dark_Violet;
+        width: 150px; height: 1px;
+    }
+    &__title {
+        margin: 50px 0 80px 0;
+        font-family: $headingFont;
+        font-size: 4.25em;
+        font-weight: 400;
+        color: $Very_Dark_Violet;
+    }
+    &__text {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            width: 87px; height: 87px;
+            object-fit: contain;
+        }
+        h3 {
+            margin: 32px 0 17px 0;
+            font-family: $headingFont;
+            font-weight: 400;
+            font-size: 1.625em;
+            color: $Very_Dark_Violet;
+        }
+        p {
+            font-family: $bodyFont;
+            color: $Dark_Grayish_Violet;
+            font-size: 0.9375em;
+            width: 37ch;
+            line-height: 1.7;
+        }
+    }
+    &__cta {
+        position: relative;
+        margin-top: 160px;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $Dark_Violet;
+        width: 100%; min-height: 250px;
+        > img.desktop {
+            right: 0; 
+            position: absolute; z-index: 1;
+        }
+        > img.mobile {
+            position: absolute; z-index: 1;
+            display: none;
+        }
+        h3 {
+            position: relative; z-index: 2;
+            font-family: $headingFont;
+            color: $Very_Light_Gray;
+            font-size: 3.25em;
+            font-weight: 400;
+            line-height: 1;
+        }
+        button {
+            position: relative; z-index: 2;
+            width: 160px; height: 40px;
+            border: 2px solid $Very_Light_Gray;
+            color: $Very_Light_Gray;
+            background: transparent;
+            font-family: $bodyFont;
+            letter-spacing: 1px;
+            font-weight: 700;
+            font-size: 0.8125em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and(max-width: 1150px){
+    .body {
+        padding-top: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body__text {
+        > article {
+            display: flex;
+            img {
+                margin-right: 50px;
+            }
+            h3 {
+                margin-top: 0;
+            }
+        }
+        > article:nth-child(2) {
+            margin: 30px 0  ;
+        }
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and(max-width: 900px){
+    .body__cta {
+        padding: 70px 0;
+        flex-direction: column;
+        justify-content: initial;
+        img {
+            top: 0; bottom: 0;
+            height: 100%;
+        }
+        h3 {
+            text-align: center;
+        }
+        button {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and(max-width: 800px){
+    .body__cta {
+        > img.desktop {
+            display: none;
+        }
+        > img.mobile {
+            display: initial;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .body {
+        padding-bottom: 130px;
+    }
+    .body__title {
+        margin: 35px 0 70px 0;
+        font-size: 2.75em;
+    }
+    .body__text {
+        > article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin: 0 0 30px 0;
+            }
+            h3 {
+                text-align: center;
+                margin-top: 0;
+            }
+            p {
+                text-align: center;
+
+            }
+        }
+        > article:nth-child(2) {
+            margin: 30px 0  ;
+        }
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .body__cta {
+        margin-top: 100px;
+        h3 {
+            font-size: 2.5em;
+        }
+    }
+}

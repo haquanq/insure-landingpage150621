@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+@import "./variable";
+@import "./header";
+@import "./body";
+@import "./footer";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media (hover:hover) {
+    .head__nav__container {
+        .nav_link {
+            > a {
+                transition: 200ms ease;
+            }
+            > a:hover {
+                color: $Dark_Violet;
+            }
+            > button {
+                transition: 200ms ease;
+                cursor: pointer;
+            }
+            > button:hover {
+                background: $Dark_Violet;
+                color: white;
+            }
+        }
+    }
+    .head__intro__container {
+        > div {
+            > button {
+                transition: 200ms ease;
+                cursor: pointer;
+            }
+            > button:hover {
+                background: white;
+                color: $Dark_Violet;
+            }
+        }
+    }
+    .body__cta {
+        > button {
+            transition: 200ms ease;
+            cursor: pointer;
+        }
+        > button:hover {
+            background: white;
+            color: $Dark_Violet;
+        }
+    }
+    .foot__navi__section {
+        > div {
+            > a:hover::after {
+                opacity: 1;
+            }
+        }
+    }
+    .foot__icon {
+        > div:last-child {
+            > svg {
+                cursor: pointer;
+            }
+            > svg:hover > path {
+                fill: $Dark_Violet;
+            }
+        }
+    }
+}
