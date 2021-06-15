@@ -703,9 +703,9 @@ footer > img.mobile {
 .foot__navi__section div a {
   color: #2d2640;
   font-size: 0.9375em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   position: relative;
   -webkit-transition: 200ms ease;
   transition: 200ms ease;
