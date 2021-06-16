@@ -25,6 +25,7 @@ ham_btn.addEventListener("click", () => {
 
 window.addEventListener("resize", () => {
     if (openState == true && window.innerWidth > 800) {
+        ham_btn.classList.remove("open");
         body.style.overflow = null;
         setTimeout(() => menuContent.style.opacity = null,);
         setTimeout(() => menu.style.height = null, 300);
